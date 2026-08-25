@@ -57,7 +57,7 @@ DeviceProcessEvents
 | where RemotePort in ("9001", "9030", "9040", "9050", "9051", "9150")
 | project Timestamp, DeviceName, InitiatingProcessAccountName, InitiatingProcessFileName, ActionType, RemoteIP, RemoteUrl,RemotePort, InitiatingProcessFolderPath
 | order by Timestamp desc
-
+```
 
 Timeline of Events
 Time (Local)
