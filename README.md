@@ -30,13 +30,13 @@ Steps Taken
 
 Query to locate events: 
 
-DeviceFileEvents
-| where DeviceName == "mr2-btc-p62"
-| where FileName contains "tor"
-| where InitiatingProcessAccountName == "toborrm"
-| where Timestamp >= datetime(2026-08-18T23:40:51.1848608Z)
-| order by Timestamp desc
-| project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256 = InitiatingProcessAccountName
+DeviceFileEvents  
+| where DeviceName == "threat-hunt-lab"  
+| where InitiatingProcessAccountName == "employee"  
+| where FileName contains "tor"  
+| where Timestamp >= datetime(2024-11-08T22:14:48.6065231Z)  
+| order by Timestamp desc  
+| project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 
 
 Searched the DeviceProcessEvents table for any ProcessCommandLine that contained the string "tor-browser-windows-x86_64-portable-14.0.1.exe". Based on the logs returned, at 2026-08-18T22:47:13.201577Z, an employee on the "threat-hunt-lab" device ran the file tor-browser-windows-x86_64-portable-14.0.1.exe from their Downloads folder, using a command that triggered a silent installation. 
