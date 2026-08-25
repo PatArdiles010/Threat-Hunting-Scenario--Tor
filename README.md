@@ -111,5 +111,5 @@ On August 18, 2026, the user "toborrm" on device mr2-btc-p62 downloaded and repe
 
 
 
-Response Taken
+## Response Taken
 TOR usage was confirmed on endpoint mr2-btc-p62. The device was isolated and the user's direct manager was notified.
