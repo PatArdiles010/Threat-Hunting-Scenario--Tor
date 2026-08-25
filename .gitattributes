@@ -1,0 +1,7 @@
+*.kql linguist-language=Kusto
+
+/
+├── .gitattributes
+├── queries/
+│   └── Tor_File_Activity.kql
+└── README.md
