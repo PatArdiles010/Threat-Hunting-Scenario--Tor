@@ -29,11 +29,9 @@ Management suspects that some employees may be using TOR browsers to bypass netw
 
 ---
 
-## Query to locate events:
+## Query used to locate events:
 
 ```kql
-
-Query to locate events:
 
 DeviceFileEvents
 | where DeviceName =="mr2-btc-p62"
