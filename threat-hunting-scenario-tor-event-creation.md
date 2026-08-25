@@ -97,6 +97,7 @@ A shortcut file, tor-shopping-list.txt.lnk, was created in the user's Recent Ite
 storage.sqlite and storage-sync-v2.sqlite (Tor Browser profile data files) were modified, consistent with browser session/state data being saved during continued use.
 
 Summary
+
 On August 18, 2026, the user "toborrm" on device mr2-btc-p62 downloaded and repeatedly executed the Tor Browser installer
 (tor-browser-windows-x86_64-portable-15.0.20.exe) from their Downloads folder, ultimately triggering a silent installation
 using the /S switch — a method that suppresses standard installation prompts and reduces visibility into the install. Within
