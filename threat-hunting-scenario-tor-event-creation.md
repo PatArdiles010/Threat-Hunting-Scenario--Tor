@@ -62,30 +62,39 @@ DeviceProcessEvents
 Timeline of Events
 Time (Local)
 Event
+
 6:35:14 PM
 User "toborrm" executed tor-browser-windows-x86_64-portable-15.0.20.exe from the Downloads folder (initial run, no silent flag).
+
 6:41:48 PM
 Installer executed again from the Downloads folder.
+
 6:43:13 PM
 Installer executed with the /S switch, triggering a silent installation (no user-facing prompts).
+
 6:45:19 PM
 Installer executed again from the Downloads folder.
+
 6:47:13 PM
 Installer executed a final time with the /S switch, again triggering a silent installation.
+
 6:48:22 PM
 firefox.exe (Tor Browser) launched for the first time from C:\Users\Toborrm\Desktop\Tor Browser\Browser\firefox.exe, confirming the browser was opened.
+
 6:48:24 PM
 tor.exe spawned from C:\Users\Toborrm\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe, initializing the Tor client/proxy process.
+
 6:48:56 PM
 Network connection successfully established from firefox.exe to 127.0.0.1 on port 9150 — the local SOCKS port Tor Browser uses to route traffic through the Tor network, confirming the browser was actively using Tor.
+
 6:49:02 PM – 6:56:07 PM
 Multiple additional firefox.exe child processes spawned continuously, consistent with an active, ongoing Tor browsing session (tabs/content processes).
+
 7:40:51 PM
 A shortcut file, tor-shopping-list.txt.lnk, was created in the user's Recent Items folder, indicating a file named tor-shopping-list.txt was created and/or opened on the Desktop.
+
 7:53:41 PM
 storage.sqlite and storage-sync-v2.sqlite (Tor Browser profile data files) were modified, consistent with browser session/state data being saved during continued use.
-
-Summary
 
 Summary
 On August 18, 2026, the user "toborrm" on device mr2-btc-p62 downloaded and repeatedly executed the Tor Browser installer
