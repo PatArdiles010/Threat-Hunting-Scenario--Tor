@@ -29,9 +29,12 @@ Management suspects that some employees may be using TOR browsers to bypass netw
 
 ---
 
-## Related Queries:
+## Query to locate events:
+
 ```kql
-Query to locate events: 
+
+Query to locate events:
+
 DeviceFileEvents
 | where DeviceName =="mr2-btc-p62"
 | where FileName contains "tor"
@@ -39,8 +42,6 @@ DeviceFileEvents
 | where Timestamp >= datetime(2026-08-18T23:40:51.1848608Z)
 |order by Timestamp desc
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256 = InitiatingProcessAccountName
-
-`Query used to locate events: 
 
 DeviceProcessEvents
 | where DeviceName =="mr2-btc-p62"
@@ -51,6 +52,7 @@ DeviceProcessEvents
 | where FileName  has_any ("tor.exe", "firefox", "tor-browser.exe")
 | project Timestamp, DeviceName,AccountName, ActionType, FileName,FolderPath,SHA256, ProcessCommandLine
 | order by Timestamp desc
+
 ``DeviceNetworkEvents
 | where DeviceName =="mr2-btc-p62"
 | where InitiatingProcessAccountName != "system"
