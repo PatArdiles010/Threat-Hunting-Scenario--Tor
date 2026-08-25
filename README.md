@@ -67,7 +67,7 @@ DeviceNetworkEvents
 | order by Timestamp desc
 
 
-Chronological Events
+## Chronological Events
 
 Timeline of Events
 
